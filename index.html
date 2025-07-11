@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: black;
+
+        }
+        #container{
+            width: 60%;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btncontainer{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+        #log, #state{
+            flex-direction: column;
+            width: 400px;
+            height: 80px;
+            background-color: yellow;
+            padding: 2px;
+            background-color: 2px solid black;
+            margin: 20px;
+            border-radius: 20px;
+            padding-left: 20px;
+            color: black;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+        }
+        button{
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+        #start-btn:hover{
+            background-color: blue;
+        }
+        #stop-btn:hover{
+            background-color: red
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Key Logger</h1>
+        <h2>Developer Parikshit</h2>
+        <div class="btn-container">
+            <button id="start-btn">Start Logging Keypresses</button>
+            <button id="stop-btn">Stop Logging Keypresses</button>
+        </div>
+        <div class="btncontainer">
+            <div id="log"></div>
+            <div id="state"></div>
+        </div>
+    </div>
+    <script src="system.js"></script>
+
+</body>
+</html>
